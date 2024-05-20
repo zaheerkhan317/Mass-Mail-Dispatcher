@@ -1,0 +1,107 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-weight: 200;
+  font-size: 3em;
+  color: #411956;
+  margin-bottom: 10px;
+}
+
+header h2 {
+  font-weight: 400;
+  font-size: 1.5em;
+  color: #666;
+}
+
+main {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="file"],
+textarea {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+input[type="button"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #411956;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="button"]:hover {
+  background-color: #3e3f7c;
+}
+
+.email-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.email-details div {
+  flex: 1;
+}
+
+.email-details p {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.email-details div {
+  max-height: 150px;
+  overflow: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.email-details div p {
+  margin-bottom: 5px;
+}

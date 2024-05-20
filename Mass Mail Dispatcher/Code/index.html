@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mail Dispatch</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>
+                <span class="txt-rotate" data-period="2000"
+                    data-rotate='["Hello!! Peeps", "Want to send", "Multiple Emails", "in Single-click", "Then Welcome.", "You are on", "Right Platform.", "Just upload a", "CSV file", "Write message", "And", "Send Emails", "ENJOY!"]'></span>
+            </h1>
+            <h2>MASS MAIL DISPATCHER</h2>
+        </header>
+        <main>
+            <form method="post" id="form1">
+                <label for="senderEmail">From:</label>
+                <input type="email" id="senderEmail" name="senderEmail" placeholder="Your Email" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" placeholder="Email Subject" required>
+
+                <label for="csvFile">CSV File:</label>
+                <input type="file" id="csvFile" name="csvFile" accept=".csv" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+
+                <input type="button" value="Send Emails" onclick="sendEmails()">
+            </form>
+
+            <div class="email-details">
+                <div>
+                    <p>Valid Emails: <span id="validEmailCount"></span></p>
+                    <div id="validEmails"></div>
+                </div>
+                <div>
+                    <p>Invalid Emails: <span id="invalidEmailCount"></span></p>
+                    <div id="invalidEmails"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
